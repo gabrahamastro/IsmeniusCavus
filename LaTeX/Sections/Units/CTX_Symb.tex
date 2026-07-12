@@ -1,0 +1,201 @@
+\begin{frame}{Regional Map Legend}
+
+\centering
+
+\begin{tikzpicture}[x=2.4cm,y=0.72cm]  % <-- reduced y scale
+
+\tikzset{
+legendunit/.style={
+draw=black,
+rounded corners=2pt,
+minimum width=0.9cm,
+minimum height=0.45cm,
+font=\scriptsize
+},
+legendlabel/.style={
+align=center,
+font=\scriptsize
+}
+}
+
+%----------------------------------
+% HEADERS
+%----------------------------------
+
+\node[font=\large] at (0,0) {Fields};
+\node[font=\large] at (2.5,0) {Scarps};
+
+%----------------------------------
+% FIELDS COLUMN 1
+%----------------------------------
+
+\node[legendlabel] at (-0.5,-0.8) {smooth field};
+\node[legendunit,fill=fieldgreen!20] at (-0.5,-1.3) {SF};
+
+\node[legendlabel] at (-0.5,-2.3) {light mottled field};
+\node[legendunit,fill=fieldgreen!25] at (-0.5,-2.8) {LMF};
+
+\node[legendlabel] at (-0.5,-3.8) {dark mottled field};
+\node[legendunit,fill=fieldgreen!45] at (-0.5,-4.3) {DMF};
+
+\node[legendlabel] at (-0.5,-5.3) {rippled field};
+\node[legendunit,fill=fieldgreen!40] at (-0.5,-5.8) {RIF};
+
+\node[legendlabel] at (-0.5,-6.8) {ribbed field};
+\node[legendunit,fill=fieldgreen!60] at (-0.5,-7.3) {RBF};
+
+%----------------------------------
+% FIELDS COLUMN 2
+%----------------------------------
+
+\node[legendlabel] at (0.5,-0.8) {fine rough field};
+\node[legendunit,fill=fieldgreen!50] at (0.5,-1.3) {FRF};
+
+\node[legendlabel] at (0.5,-2.3) {rubble covered field};
+\node[legendunit,fill=fieldgreen!75] at (0.5,-2.8) {RCF};
+
+\node[legendlabel] at (0.5,-3.8) {terraced field};
+\node[legendunit,fill=fielddark!20] at (0.5,-4.3) {TF};
+
+\node[legendlabel] at (0.5,-5.3) {chaotic field};
+\node[legendunit,fill=fielddark!35] at (0.5,-5.8) {CHF};
+
+%----------------------------------
+% SCARPS COLUMN 1
+%----------------------------------
+
+\node[legendlabel] at (2.0,-1) {smooth lineated scarp};
+\node[legendunit,fill=scarporange!20] at (2.0,-1.6) {SLS};
+
+\node[legendlabel] at (2.0,-3) {furrowed scarp};
+\node[legendunit,fill=scarporange!40] at (2.0,-3.6) {FS};
+
+\node[legendlabel] at (2.0,-5)
+{transverse\\lineated scarp \\};
+\node[legendunit,fill=scarporange!60] at (2.0,-5.6) {TLS};
+
+%----------------------------------
+% SCARPS COLUMN 2
+%----------------------------------
+
+\node[legendlabel] at (3.5,-1) {ribbed scarp};
+\node[legendunit,fill=scarporange!75] at (3.5,-1.6) {RBS};
+
+\node[legendlabel] at (3.5,-3) {rough scarp};
+\node[legendunit,fill=red!35] at (3.5,-3.6) {RS};
+
+\node[legendlabel] at (3.5,-5) {terraced scarp};
+\node[legendunit,fill=red!55] at (3.5,-5.6) {TS};
+
+\end{tikzpicture}
+
+\end{frame}
+
+\begin{frame}{Regional Map Legend}
+
+\centering
+
+\begin{tikzpicture}[x=3.0cm,y=1.0cm]
+
+\tikzset{
+legendunit/.style={
+draw=black,
+rounded corners=2pt,
+minimum width=1.0cm,
+minimum height=0.5cm,
+font=\scriptsize
+},
+legendlabel/.style={
+align=center,
+font=\scriptsize
+}
+}
+
+%--------------------------------------------------
+% HEADER
+%--------------------------------------------------
+
+\node[font=\Large] at (1.0,0) {Flows};
+
+%--------------------------------------------------
+% LEFT COLUMN
+%--------------------------------------------------
+
+\node[legendlabel] at (0,-1) {smooth lineated field};
+\node[legendunit,fill=flowblue!25] at (0,-1.6) {SLF};
+
+\node[legendlabel] at (0,-3) {rough lineated field};
+\node[legendunit,fill=flowblue!50] at (0,-3.6) {RLF};
+
+\node[legendlabel] at (0,-5) {strongly lineated field};
+\node[legendunit,fill=flowblue!80] at (0,-5.6) {StLF};
+
+%--------------------------------------------------
+% RIGHT COLUMN
+%--------------------------------------------------
+
+\node[legendlabel] at (2,-1) {lobate flow};
+\node[legendunit,fill=flowblue!35] at (2,-1.6) {LF};
+
+\node[legendlabel] at (2,-3) {transverse lineated feature};
+\node[legendunit,fill=flowblue!60] at (2,-3.6) {TLF};
+
+\end{tikzpicture}
+
+\end{frame}
+
+\begin{frame}{Regional Map Legend}
+
+\centering
+
+\begin{tikzpicture}[x=3.5cm,y=1.0cm]
+
+\tikzset{
+legendunit/.style={
+draw=black,
+rounded corners=2pt,
+minimum width=1.0cm,
+minimum height=0.5cm,
+font=\scriptsize
+},
+legendlabel/.style={
+align=center,
+font=\scriptsize
+}
+}
+
+%--------------------------------------------------
+% HEADERS
+%--------------------------------------------------
+
+\node[font=\Large] at (0,0) {Rises};
+
+\node[font=\Large] at (2.5,0) {Highlands};
+
+%--------------------------------------------------
+% RISES
+%--------------------------------------------------
+
+\node[legendlabel] at (0,-1) {smooth rise};
+\node[legendunit,fill=risepurple!30] at (0,-1.6) {SR};
+
+\node[legendlabel] at (0,-3) {rough rise};
+\node[legendunit,fill=risepurple!50] at (0,-3.6) {RR};
+
+\node[legendlabel] at (0,-5) {ribbed rise};
+\node[legendunit,fill=risepurple!40] at (0,-5.6) {RBR};
+
+%--------------------------------------------------
+% HIGHLANDS
+%--------------------------------------------------
+
+\node[legendlabel] at (2.5,-1)
+{smooth cratered highlands};
+
+\node[legendunit,fill=highlandbrown!50]
+at (2.5,-1.6)
+{SCH};
+
+\end{tikzpicture}
+
+\end{frame}

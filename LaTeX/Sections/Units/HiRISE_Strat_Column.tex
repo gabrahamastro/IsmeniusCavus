@@ -1,0 +1,149 @@
+\begin{frame}{Stratigraphic Correlations of Alcove Units}
+
+\centering
+
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[x=1cm,y=0.7cm]
+
+%--------------------------------------------------
+% STYLES
+%--------------------------------------------------
+
+\tikzset{
+stratunit/.style={
+draw=black,
+rounded corners=2pt,
+minimum width=1.0cm,
+minimum height=0.55cm,
+font=\scriptsize,
+inner sep=2pt
+}
+}
+
+%--------------------------------------------------
+% FRAME
+%--------------------------------------------------
+
+\draw[line width=0.8pt] (0,0) rectangle (13,13);
+
+\draw (3.25,0)--(3.25,13);
+\draw (6.50,0)--(6.50,13);
+\draw (9.75,0)--(9.75,13);
+
+\draw (0,12)--(13,12);
+
+%--------------------------------------------------
+% HEADERS
+%--------------------------------------------------
+
+\node[font=\large] at (1.6,12.40)
+{Flow};
+
+\node[font=\large] at (4.9,12.40)
+{Retreat};
+
+\node[font=\large] at (8.10,12.40)
+{Early Subl.};
+
+\node[font=\large] at (11.40,12.40)
+{Late Subl.};
+
+%--------------------------------------------------
+% GUIDES
+%--------------------------------------------------
+
+\foreach \y in {1.1,2.0,2.9,3.8,4.7,5.6,6.5,7.4,8.3,9.2,10.1,11.0}
+{
+\draw[dashed,gray!35]
+(0,\y)--(13,\y);
+}
+
+%--------------------------------------------------
+% FLOW
+%--------------------------------------------------
+
+\node[stratunit,fill=flowblue!80]
+at (0.95,1.30)
+{RFPR};
+
+\node[stratunit,fill=flowblue!65]
+at (2.30,1.30)
+{RPR};
+
+\node[stratunit,fill=flowblue!40]
+at (0.95,2.20)
+{FPR};
+
+\node[stratunit,fill=flowblue!50]
+at (2.30,2.20)
+{BPR};
+
+\node[stratunit,fill=flowblue!30]
+at (0.95,3.10)
+{FAR};
+
+\node[stratunit,fill=flowblue!20]
+at (2.30,3.10)
+{BAR};
+
+\node[stratunit,fill=flowblue!90]
+at (1.62,4.20)
+{BTPR};
+
+%--------------------------------------------------
+% RETREAT
+%--------------------------------------------------
+
+\node[stratunit,fill=scarporange!60]
+at (4.90,4.20)
+{RTR};
+
+\node[stratunit,fill=scarporange!85]
+at (4.90,5.10)
+{POTR};
+
+%--------------------------------------------------
+% EARLY SUBLIMATION
+%--------------------------------------------------
+
+\node[stratunit,fill=fieldgreen!55]
+at (8.10,6.00)
+{TLSS};
+
+\node[stratunit,fill=risepurple!45]
+at (8.10,7.00)
+{RFP};
+
+\node[stratunit,fill=risepurple!25]
+at (8.10,8.00)
+{FP};
+
+%--------------------------------------------------
+% LATE SUBLIMATION
+%--------------------------------------------------
+
+\node[stratunit,fill=fieldgreen!70]
+at (11.40,9.00)
+{RF};
+
+\node[stratunit,fill=fieldgreen!40]
+at (11.40,10.00)
+{SRF};
+
+\node[stratunit,fill=fieldgreen!20]
+at (10.70,10.95)
+{SF};
+
+\node[stratunit,fill=scarporange!20]
+at (12.10,10.95)
+{SS};
+
+\node[stratunit,fill=risepurple!65]
+at (11.40,11.80)
+{RBF};
+
+\end{tikzpicture}
+}
+
+\end{frame}
+

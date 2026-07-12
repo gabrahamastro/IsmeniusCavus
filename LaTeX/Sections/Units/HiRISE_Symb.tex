@@ -1,0 +1,177 @@
+\tikzset{
+legendunit/.style={
+draw=black,
+rounded corners=2pt,
+minimum width=1.15cm,
+minimum height=0.55cm,
+font=\scriptsize
+},
+legendlabel/.style={
+align=center,
+font=\scriptsize,
+text width=2.8cm
+}
+}
+
+\begin{frame}{Alcove Unit Legend}
+
+\centering
+
+\begin{tikzpicture}[x=2.8cm,y=0.9cm]
+
+%---------------------------------
+% HEADERS
+%---------------------------------
+
+\node[font=\Large] at (0,0) {Fields};
+
+\node[font=\Large] at (2.5,0)
+{Patterned Floor};
+
+%---------------------------------
+% FIELDS COLUMN 1
+%---------------------------------
+
+\node[legendlabel] at (-0.5,-1)
+{smooth field};
+\node[legendunit,fill=fieldgreen!20]
+at (-0.5,-1.9) {SF};
+
+\node[legendlabel] at (-0.5,-3)
+{smooth rubble field};
+\node[legendunit,fill=fieldgreen!40]
+at (-0.5,-3.9) {SRF};
+
+\node[legendlabel] at (-0.5,-5)
+{rough field};
+\node[legendunit,fill=fieldgreen!70]
+at (-0.5,-5.9) {RF};
+
+%---------------------------------
+% FIELDS COLUMN 2
+%---------------------------------
+
+\node[legendlabel] at (0.7,-1)
+{smooth scarp};
+\node[legendunit,fill=scarporange!20]
+at (0.7,-1.9) {SS};
+
+\node[legendlabel] at (0.7,-3)
+{transverse longitudinal\\surface structure};
+\node[legendunit,fill=fieldgreen!55]
+at (0.7,-3.9) {TLSS};
+
+%---------------------------------
+% PATTERNED FLOOR
+%---------------------------------
+
+\node[legendlabel] at (2.5,-1)
+{fine polygonal field};
+\node[legendunit,fill=risepurple!25]
+at (2.5,-1.9) {FP};
+
+\node[legendlabel] at (2.5,-3)
+{rubble fine polygonal\\field};
+\node[legendunit,fill=risepurple!45]
+at (2.5,-3.9) {RFP};
+
+\node[legendlabel] at (2.5,-5)
+{ribbed field};
+\node[legendunit,fill=risepurple!65]
+at (2.5,-5.9) {RBF};
+
+\end{tikzpicture}
+
+\end{frame}
+
+\begin{frame}{HiRISE Unit Legend: Ridge Systems}
+
+\centering
+
+\begin{tikzpicture}[x=2.7cm,y=0.95cm]
+
+\tikzset{
+legendunit/.style={
+draw=black,
+rounded corners=2pt,
+minimum width=1.15cm,
+minimum height=0.55cm,
+font=\scriptsize
+},
+legendlabel/.style={
+align=center,
+font=\scriptsize,
+text width=2.8cm
+}
+}
+
+%--------------------------------------------------
+% HEADERS
+%--------------------------------------------------
+
+\node[font=\Large] at (0,0)
+{Parallel Ridges};
+
+\node[font=\Large] at (2.6,0)
+{Transverse Ridges};
+
+%--------------------------------------------------
+% PARALLEL RIDGES COLUMN 1
+%--------------------------------------------------
+
+\node[legendlabel] at (-0.5,-1)
+{rubble fine parallel\\ridge cluster};
+\node[legendunit,fill=flowblue!80]
+at (-0.5,-1.9) {RFPR};
+
+\node[legendlabel] at (-0.5,-3)
+{fine parallel\\ridge cluster};
+\node[legendunit,fill=flowblue!40]
+at (-0.5,-3.9) {FPR};
+
+\node[legendlabel] at (-0.5,-5)
+{fine arcuate parallel\\ridge cluster};
+\node[legendunit,fill=flowblue!30]
+at (-0.5,-5.9) {FAR};
+
+\node[legendlabel] at (-0.5,-7)
+{rough parallel\\ridge cluster};
+\node[legendunit,fill=flowblue!65]
+at (-0.5,-7.9) {RPR};
+
+%--------------------------------------------------
+% PARALLEL RIDGES COLUMN 2
+%--------------------------------------------------
+
+\node[legendlabel] at (0.9,-1)
+{broad parallel\\ridge cluster};
+\node[legendunit,fill=flowblue!50]
+at (0.9,-1.9) {BPR};
+
+\node[legendlabel] at (0.9,-3)
+{broad arcuate parallel\\ridge cluster};
+\node[legendunit,fill=flowblue!20]
+at (0.9,-3.9) {BAR};
+
+\node[legendlabel] at (0.9,-5)
+{broad transverse overprint\\parallel ridge cluster};
+\node[legendunit,fill=flowblue!90]
+at (0.9,-5.9) {BTPR};
+
+%--------------------------------------------------
+% TRANSVERSE RIDGES
+%--------------------------------------------------
+
+\node[legendlabel] at (2.6,-2)
+{rubble thin transverse\\ridge cluster};
+\node[legendunit,fill=scarporange!60]
+at (2.6,-2.9) {RTR};
+
+\node[legendlabel] at (2.6,-5)
+{parallel overprint\\transverse ridge cluster};
+\node[legendunit,fill=scarporange!85]
+at (2.6,-5.9) {POTR};
+
+\end{tikzpicture}
+
+\end{frame}

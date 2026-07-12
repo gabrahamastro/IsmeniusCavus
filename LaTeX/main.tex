@@ -1,0 +1,133 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{array}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage[backend=biber,style=authoryear,sorting=nyt]{biblatex}
+\addbibresource{example.bib}
+
+\setbeamertemplate{caption}[numbered]
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+\setbeamercovered{transparent}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,
+                calc,
+                decorations.pathreplacing,
+                arrows.meta,
+                patterns}
+\usepackage{xcolor}
+
+\newcommand{\sidecite}[1]{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south west,font=\tiny]
+      at ([xshift=2mm,yshift=2mm]current page.south west)
+      {#1};
+  \end{tikzpicture}
+}
+
+\definecolor{fieldgreen}{HTML}{ADDD8E}
+\definecolor{fielddark}{HTML}{238443}
+
+\definecolor{scarporange}{HTML}{FC8D59}
+
+\definecolor{flowblue}{HTML}{6BAED6}
+
+\definecolor{risepurple}{HTML}{9E9AC8}
+
+\definecolor{highlandbrown}{HTML}{C8A66B}
+
+\title[]
+{Influence of Ice in North-West Ismenius Cavus, Mars}
+
+\subtitle{An exploration into influence of ice on the geomorphology and history of North-West Ismenius Cavus}
+
+\author[Abraham, George] 
+{G.~A.~Abraham\inst{1}}
+
+\institute[INGEO]
+{
+  \inst{1}%
+  Dipartimento di Ingegneria e Geologia, \\ Universit\`a d'Annunzio
+}
+
+\date[2026] 
+{Planetary Mapping Presentations, 7th June 2026}
+
+\logo{\includegraphics[height=0.5cm]{Figures/InGeoLogo.pdf}}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+
+\frame{\titlepage}
+\input{Sections/Intro/Intro.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Background}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Sections/GlacierRetreatAndSublimation/Landforms/ButcherMangold}
+\input{Sections/GlacierRetreatAndSublimation/Process/Baker15}
+\input{Sections/GlacierRetreatAndSublimation/Cirque/Li26}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data}
+\input{Sections/Data_Processing/Data_Processing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Overview of NW Ismenius Cavus}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Sections/OverviewNWIsmeniusCavus/GeneralMap/CTXOverview}
+
+\input{Sections/Units/Symbology/Backgrounds}
+\input{Sections/Units/Symbology/Lineations}
+\input{Sections/Units/CTX_Symb}
+
+\input{Sections/OverviewNWIsmeniusCavus/FormationActivity/CTXFinal}
+\input{Sections/OverviewNWIsmeniusCavus/FormationActivity/LDM}
+\input{Sections/OverviewNWIsmeniusCavus/FormationActivity/CraterIce}
+\input{Sections/OverviewNWIsmeniusCavus/FormationActivity/IceActivity}
+\input{Sections/OverviewNWIsmeniusCavus/FormationActivity/IceActivityZoom}
+
+\input{Sections/Units/CTX_Strat_Column}
+\againframe{CTXFigMap}
+\input{Sections/Units/CrossSec_NS.tex}
+\input{Sections/Units/CrossSec_EW.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Formation of Alcove Feature}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe{CTXFigMap}
+
+\input{Sections/FormationAlcoveFeature/Overview/HiRISEOverview}
+
+\input{Sections/Units/HiRISE_Symb.tex}
+\againframe{Corrie}
+\input{Sections/FormationAlcoveFeature/RegionsOfInterest/HiRISEFinal}
+\input{Sections/FormationAlcoveFeature/RegionsOfInterest/Headwall}
+\input{Sections/FormationAlcoveFeature/RegionsOfInterest/Foot}
+\input{Sections/FormationAlcoveFeature/RegionsOfInterest/Ripples}
+\input{Sections/FormationAlcoveFeature/RegionsOfInterest/GhostCrater}
+
+\input{Sections/Units/HiRISE_Strat_Column}
+\input{Sections/Conclusions/Conclusions.tex}
+\begin{frame}[allowframebreaks]{References} 
+\printbibliography
+\end{frame}
+\frame{\titlepage}
+\end{document}
