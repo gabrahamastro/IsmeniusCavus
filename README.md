@@ -1,7 +1,6 @@
 # Influence of Ice in North-West Ismenius Cavus, Mars
 ## Introduction
-Contained here are the files which relate to a project undertaken at l'Università degli Studi Gabriele d'Annunzio in Pescara in 2026. The project was undertaken to understand the processes leading to the formation of an alcove
-in NW Ismenius Cavus, located at [$34.62^{\circ}$ N, $16.80^{\circ}$ E](https://mars.quickmap.io/layers?prjExtent=988964.0118263%2C2047438.5653706%2C1003443.9501214%2C2056663.5188444&earthShadowEnabled=true&proj=3&stack=3468%2C3569%2C277%2C3467&defs=N4IgTA7BIFyg9gBwIYGMCWAXAnrAjAL4A0IAzACwBs0cISaWuMhJFlAHLAihjrAAwA6AJzEyAVkrCudHowGCIBAkA).
+Contained here are the files which relate to a project undertaken at l'Università degli Studi Gabriele d'Annunzio in Pescara in 2026, as part of the [Planetary Mapping and Data Processing](https://unich.coursecatalogue.cineca.it/corsi/2025/9553/insegnamenti/2025/33240_0902R-2525_45800_504425/2025/33240) course. The project was undertaken to understand the processes leading to the formation of an alcove in northwest Ismenius Cavus, located at [$34.62^{\circ}$ N, $16.80^{\circ}$ E](https://mars.quickmap.io/layers?prjExtent=988964.0118263%2C2047438.5653706%2C1003443.9501214%2C2056663.5188444&earthShadowEnabled=true&proj=3&stack=3468%2C3569%2C277%2C3467&defs=N4IgTA7BIFyg9gBwIYGMCWAXAnrAjAL4A0IAzACwBs0cISaWuMhJFlAHLAihjrAAwA6AJzEyAVkrCudHowGCIBAkA).
 
 ## Data Sets Used
 Data used are not contained here (owing to size constrains). Please find them at:
@@ -30,8 +29,12 @@ Data used are not contained here (owing to size constrains). Please find them at
 - [`LaTeX`](LaTeX): Contains all the source files for building [`Presentation.pdf`](Presentation.pdf)
 - [`QGIS`](QGIS): Contains all files related to the QGIS project (apart from basemaps, due to file-size constrains)
 - [`MapTemplateCTX.map`](MapTemplateCTX.map): The map template used to map-project CTX `.IMG` files. 
-- [`Presentation.pdf`](Presentation.pdf): The presentation delivered, explaining the basics about the project ([recording available here](https://youtu.be/OtV0qp5-GEE)). N.B. Contextual information (location, geological history) are not included since this was delivered alongside an introductory presentation.
+- [`Presentation.pdf`](Presentation.pdf): The presentation delivered, explaining the basics about the project ([recording available here](https://youtu.be/OtV0qp5-GEE)). 
+    - *N.B. Contextual information (location, geological history) are not included since this was delivered alongside an introductory presentation.*
 ## Acknowledgements  
 I would like to thank [Monica Pondrelli](https://orcid.org/0000-0002-2103-2939) for her continued and invaluable help, guidance and insights provided throughout the project. I also thank the other members of the group I was in as part of this project (Enora Toublanc, [Nicole Jimeno](https://orcid.org/0009-0002-8041-1805) and Hamda Amjad). Discussions with them helped with data processing and in developing insights into what the data may indicate.
 ## References
 For literature used during this project, please refer to the references located at the end of [`Presentation.pdf`](Presentation.pdf).
+
+## Licence
+The main work is licenced under the Creative Commons CC BY-SA 4.0. Note, however, that this work uses images, licenced under the terms they were originally published under (details of sources available in the presentation) and the presentation uses the $\LaTeX$ [`.bst` file](LaTeX/elsarticle-harv.bst) is provided by Elsevier through Overleaf. 
