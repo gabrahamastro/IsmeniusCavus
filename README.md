@@ -26,12 +26,12 @@ Data used are not contained here (owing to size constrains). Please find them at
 - **gysymb**: [Version `1.1.0`](https://github.com/afrigeri/geologic-symbols-qgis/releases/tag/v1.1.0)
 
 ## File Structure
-- [`LaTeX`](LaTeX): Contains all the source files for building [`Presentation.pdf`](Presentation.pdf)
+- [`LaTeX`](LaTeX): Contains all the source files for building [`Presentation.pdf`](Presentation.pdf). Note that files within [`Diagrams`](LaTeX/Figures/Diagrams/) are missing because they are released under different licence terms.
 - [`QGIS`](QGIS): Contains all files related to the QGIS project (apart from basemaps, due to file-size constrains)
 - [`MapTemplateCTX.map`](MapTemplateCTX.map): The map template used to map-project CTX `.IMG` files. 
-- [`Presentation.pdf`](Presentation.pdf): The presentation delivered, explaining the basics about the project ([recording available here](https://youtu.be/OtV0qp5-GEE)). 
+- [`Presentation.pdf`](Presentation.pdf): The presentation delivered, explaining the basics about the project ([recording available here](https://youtu.be/OtV0qp5-GEE)).
     - *N.B. Contextual information (location, geological history) are not included since this was delivered alongside an introductory presentation.*
-## Acknowledgements  
+## Acknowledgements 
 I would like to thank [Monica Pondrelli](https://orcid.org/0000-0002-2103-2939) for her continued and invaluable help, guidance and insights provided throughout the project. I also thank the other members of the group I was in as part of this project (Enora Toublanc, [Nicole Jimeno](https://orcid.org/0009-0002-8041-1805) and Hamda Amjad). Discussions with them helped with data processing and in developing insights into what the data may indicate.
 ## References
 For literature used during this project, please refer to the references located at the end of [`Presentation.pdf`](Presentation.pdf).
