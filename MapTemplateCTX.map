@@ -1,0 +1,12 @@
+Group = Mapping
+  ProjectionName     = Equirectangular
+  CenterLongitude    = 0.0
+  CenterLatitude     = 0.0
+  TargetName         = Mars
+  EquatorialRadius   = 3396190.0 <meters>
+  PolarRadius        = 3396190.0 <meters>
+  LatitudeType       = Planetocentric
+  LongitudeDirection = PositiveEast
+  LongitudeDomain    = 180
+End_Group
+End
